@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Factorial Program</title>
+</head>
+<body>
+
+    <h2>Factorial of a Number</h2>
+
+    <input type="number" id="num" placeholder="Enter the number">
+    <button onclick="factorial()">Calculate</button>
+
+    <p id="result"></p>
+
+    <script>
+        function factorial() {
+            let num = parseInt(document.getElementById("num").value);
+            let f = 1;
+
+            for (let i = 1; i <= num; i++) {
+                f = f * i;
+            }
+
+            document.getElementById("result").innerHTML =
+                num + "! is " + f;
+        }
+    </script>
+
+</body>
+</html>
